@@ -36,7 +36,7 @@ class Bot(InteractionBot):
         self.logFormatter = logFormatter
         self.test_mode = bool(os.getenv("TEST_GUILD"))
         self.cog_not_loaded: List[str] = []
-        intents = disnake.Intents.all()
+        intents = disnake.Intents.default()
 
         if self.test_mode:
             logging.info("Starting in test mod...")

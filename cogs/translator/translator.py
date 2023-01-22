@@ -10,6 +10,8 @@ translator_en = GoogleTranslator(source="auto", target="en")
 translator_sv = GoogleTranslator(source="auto", target="sv")
 translator_fr = GoogleTranslator(source="auto", target="fr")
 
+#TODO: detect and respect markdown syntax
+
 def translate(text: str, translator: GoogleTranslator = translator_en) -> str:
     if text != None and text != None:
         return_text = ""
